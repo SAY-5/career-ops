@@ -606,6 +606,8 @@ search_queries:
   # not the specialty. To use one, copy it, swap the quoted role terms for your
   # field, keep the `site:` filters and the location/remote token, then set
   # enabled: true. Leave the rest disabled so they don't run.
+  # Results are also filtered by title: uncomment your profession under
+  # `title_filter.positive` above too, or its titles are dropped before you see them.
   - name: Healthcare - Registered Nurse
     query: 'site:boards.greenhouse.io OR site:jobs.lever.co "Registered Nurse" OR "RN" OR "Nurse Practitioner" ("remote" OR "telehealth")'
     enabled: false
